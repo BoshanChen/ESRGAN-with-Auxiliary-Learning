@@ -17,7 +17,7 @@ This project uses the Flickr2K dataset for training and evaluation.
 
 ### Flickr2K Dataset Overview
 
-- **Source**: The Flickr2K dataset is a high-quality collection of 2,000 2K resolution images sourced from Flickr. It is widely used in image super-resolution tasks.
+- **Source**: The Flickr2K_HR dataset is a high-quality collection of 2,000 2K resolution images sourced from Flickr. It is widely used in image super-resolution tasks.
 - **Contents**: The dataset includes a diverse range of images, making it suitable for training models that require high-resolution image data.
 - **Format**: Ensure you describe the expected format of the images or any preprocessing steps required.
 
