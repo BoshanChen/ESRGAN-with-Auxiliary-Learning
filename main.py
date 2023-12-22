@@ -114,12 +114,13 @@ if __name__ == "__main__":
 
     print(f"Total training images: {len(train_dataloader.dataset)}")
     print(f"Total validation images: {len(val_dataloader.dataset)}")
-    for i, real_images in enumerate(train_dataloader):
-        print(f'Batch {i}: Shape - {real_images.shape}, Type - {real_images.dtype}')
-        print(f'Batch {i}: Min - {real_images.min()}, Max - {real_images.max()}')
+    # for i, real_images in enumerate(train_dataloader):
+    #     print(f'Batch {i}: Shape - {real_images.shape}, Type - {real_images.dtype}')
+    #     print(f'Batch {i}: Min - {real_images.min()}, Max - {real_images.max()}')
+    #
+    #     if i == 2:
+    #         break
 
-        if i == 2:
-            break
     # Initialize trainer
     input_channels = next(iter(train_dataloader))[0].shape[1]
     trainer = Trainer(generator, discriminator, aux_net, g_optimizer, d_optimizer, aux_optimizer, device, input_channels, lambda_aux, scale_factor,
